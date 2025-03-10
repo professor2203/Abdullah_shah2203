@@ -1,0 +1,166 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-section {
+    background-color: #2c3e50;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+/* Education Container */
+.education-container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.education-item {
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+}
+
+.education-item:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.education-item:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.education-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.degree-title {
+    font-size: 2em;
+    color: #2980b9;
+}
+
+.institution-name {
+    font-size: 1.2em;
+    color: #16a085;
+}
+
+.year {
+    font-size: 1em;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 1.1em;
+    color: #34495e;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+/* Progress Bar */
+.progress-bar {
+    width: 100%;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    height: 12px;
+    margin-bottom: 10px;
+}
+
+.progress {
+    background-color: #3498db;
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+/* Skills Section */
+.skills-section {
+    margin-top: 50px;
+    background-color: #ecf0f1;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.skills-section h2 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.skill-item {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.skill-item h3 {
+    font-size: 1.8em;
+    color: #2980b9;
+}
+
+.skill-item p {
+    font-size: 1.1em;
+    color: #34495e;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
